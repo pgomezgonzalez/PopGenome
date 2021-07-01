@@ -1,4 +1,4 @@
-get_data_new <- function(matr,include.unknown=FALSE,gff=FALSE,FAST,SNP.DATA){
+get_data_AllSNPs <- function(matr,include.unknown=FALSE,gff=FALSE,FAST,SNP.DATA){
 
 reverse.codons <- FALSE
 
