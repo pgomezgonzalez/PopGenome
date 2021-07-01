@@ -488,7 +488,7 @@ matrixCCC <- t(matrixCCC)
     nsites2[xx] <- dim(gen)[2] # important for SNPDATA
 
     #------------------------------------------------------#
-    result    <- popgen_indels(gen,Populations=populations,outgroup=outgroup,methods=methods,include.unknown=include.unknown,gff=gff_object_fit,FAST,SNP.DATA)
+    result    <- popgen_ins(gen,Populations=populations,outgroup=outgroup,methods=methods,include.unknown=include.unknown,gff=gff_object_fit,FAST,SNP.DATA)
     #------------------------------------------------------#
     rm(gen) # delete gen
 
