@@ -1,4 +1,4 @@
-readData <- function(path,populations=FALSE,outgroup=FALSE,include.unknown=FALSE,gffpath=FALSE,format="fasta",parallized=FALSE,progress_bar_switch=TRUE,
+readDataAllSNPs <- function(path,populations=FALSE,outgroup=FALSE,include.unknown=FALSE,gffpath=FALSE,format="fasta",parallized=FALSE,progress_bar_switch=TRUE,
 FAST=FALSE,big.data=FALSE,SNP.DATA=FALSE){
 
 
