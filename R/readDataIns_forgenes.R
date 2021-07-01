@@ -406,6 +406,7 @@ fasta <- read.fasta(liste[xx])
 matrixCCC <- as.data.frame(matrix(ncol=length(fasta),nrow=length(fasta[[1]])))
 for(i in 1:length(fasta)){
 	matrixCCC[,i] <- fasta[[i]]
+	names(matrixCCC) <- names(fasta)
 }
 matrixCCC <- matrixCCC[,2:length(matrixCCC)]
 
