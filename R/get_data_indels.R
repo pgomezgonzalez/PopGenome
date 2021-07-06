@@ -237,8 +237,8 @@ erg <- apply(matr,2,function(check){
       #sechs        <- fuenfsechs[2]   #this is true if there are 6s (so "-"=6)
       seises       <- is.element(del,check)   #del = 6
       sietes       <- is.element(ins,check)   #ins = 7
-      seis         <- seis[1]
-      siete        <- siete[1]
+      seis         <- seises[1]
+      siete        <- sietes[1]
 
 
      # keine 5 oder 6  ni 5 ni 6, so not "-" or "N"
@@ -277,7 +277,7 @@ erg <- apply(matr,2,function(check){
 
       if(size==2){      #si tenemos una posicion bialelica (reference y alternate solo)
 
-        if(seis){  #si hay insertion or deletion
+        if(seis | siete){  #si hay insertion or deletion
 
          RETURN[6] <- 1 # bial_sites
 
@@ -348,7 +348,7 @@ erg <- apply(matr,2,function(check){
 
        if(size==2){ # biallelic
 
-         if(seis){
+         if(seis | siete){
 
          RETURN[4]             <- 1 # mvbp
          RETURN[6]             <- 1 # bial_sites
