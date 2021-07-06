@@ -277,7 +277,7 @@ erg <- apply(matr,2,function(check){
 
       if(size==2){      #si tenemos una posicion bialelica (reference y alternate solo)
 
-        if(seis | siete){  #si hay insertion or deletion
+        if(seis){  #si hay insertion or deletion
 
          RETURN[6] <- 1 # bial_sites
 
@@ -348,7 +348,7 @@ erg <- apply(matr,2,function(check){
 
        if(size==2){ # biallelic
 
-         if(seis | siete){
+         if(seis){
 
          RETURN[4]             <- 1 # mvbp
          RETURN[6]             <- 1 # bial_sites
