@@ -1,4 +1,4 @@
-readDataIndels_forgenes <- function(vcf,path,populations=FALSE,outgroup=FALSE,include.unknown=FALSE,gffpath=FALSE,format="fasta",parallized=FALSE,progress_bar_switch=TRUE,
+readDataIndels_forgenes <- function(path,populations=FALSE,outgroup=FALSE,include.unknown=FALSE,gffpath=FALSE,format="fasta",parallized=FALSE,progress_bar_switch=TRUE,
 FAST=FALSE,big.data=FALSE,SNP.DATA=FALSE){
 #INDELS MODIFIED#
 
